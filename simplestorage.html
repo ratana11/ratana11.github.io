@@ -12,11 +12,11 @@
   </style>
 </head>
 <body>
-<h3>kunkuk U biochem420_0.0.0 Simple Storage dApp 예제 20180511</h3>
+<h3>kunkuk biochem 20180511</h3>
 <ul>
   <li>컨트랙트 주소: <span id="contractAddr"></span></li>
   <li>내 어카운트 주소: <span id="accountAddr"></span></li>
-  <li>컨트랙트에 저장된 값: <span id="storedData"></span>
+  <li> age: <span id="storedData"></span>
     <button onclick="getValue()">새로고침</button> (현재블록: <span id="lastBlock"></span>)</li>
   <li><input id="newValue" type="text"><button onclick="setValue()">새 값으로 저장하기</button>
       <div id="result"></div></li>
@@ -24,7 +24,7 @@
 </ul>
 
 컨트랙트 소스
-<script src="https://gist.github.com/atomrigs/7c633570496b79623bed5d1286f93f3a.js"></script>
+<script src="https://gist.github.com/ratana11/17c6825b8ee56b38feac42081220cbb7.js"></script>
 
 HTML 소스<br>
 <a href="https://github.com/ratana11/ratana11.github.io/blob/master/simplestorage.html">https://github.com/ratana11/ratana11.github.io/blob/master/simplestorage.html </a>;
@@ -37,7 +37,7 @@ HTML 소스<br>
 <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
 <!-- script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script -->
 <script>
-var contractAddress = '0xc6637F94f3bE87777bD1936BFe17dB679ED494f1';
+var contractAddress = '0x6d7c04ecccdd86dc1a42ff5c3cd13cae57f3a092';
 var abi = [{"constant":false,"inputs":[{"name":"x","type":"uint256"}],"name":"set","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"get","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"}];
 var simpleStorageContract;
 var simpleStorage;
